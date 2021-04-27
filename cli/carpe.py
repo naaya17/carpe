@@ -32,7 +32,6 @@ def Main():
         print(tool.GetVersionInformation())
         print()
         dependencies.CheckDependencies(verbose_output=True)
-
         print('Also see: http://forensic.korea.ac.kr')
         return True
 
@@ -53,7 +52,6 @@ def Main():
     if have_list_option:
         return True
 
-    # TODO: dependencies_check 되게 해야함!!
     if tool.dependencies_check and not dependencies.CheckDependencies(
             verbose_output=False):
         return False

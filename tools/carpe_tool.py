@@ -301,7 +301,7 @@ class CarpeTool(extraction_tool.ExtractionTool,
         engine = process_engine.ProcessEngine()
 
         # determine operating system
-        self.print_now_time(f'Determine Operation System')
+        self.print_now_time(f'Determine Operating System')
         self._Preprocess(engine)
 
         # set timezone
